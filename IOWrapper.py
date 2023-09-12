@@ -1,11 +1,13 @@
 from io import StringIO 
-class IOtranferObject:
+class IOWrapper():
     def __init__(self):
-        self.inBuffer=StringIO("")
-        self.outBuffer=StringIO("")
-    def input():
-        return self.inBuffer
-    def check(o):
+        self.inBuffer=""
+        self.outBuffer=""
+    def input(self):
+        return (StringIO(self.inBuffer)).read()
+    def output(self):
+        return (StringIO(self.outBuffer)).write()
+    def check(self,o):
         if (self.inBuffer==o.inBuffer) and (self.outBuffer==o.outBuffer):
             return True
         else :

@@ -1,5 +1,5 @@
-# Autograding Example: Python
-This example project is written in Python, and tested with pytest.
+# Assignment Template: Python
+This example assignment is written in Python, and tested with pytest. For IIST SCOP Platform
 
 ### The assignment
 The tests are failing right now because the method isn't outputting the correct string. Fixing this up will make the tests green.
